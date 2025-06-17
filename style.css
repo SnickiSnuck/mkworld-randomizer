@@ -18,8 +18,6 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   flex-direction: column;
   padding: 1rem;
@@ -52,6 +50,7 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
 
 .item-img{
   max-height: 8rem;
+  max-width: 100%;
   border-radius: 1rem;
 }
 
@@ -96,18 +95,12 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
     border-bottom-right-radius: 0rem;
     border-bottom: none;
     margin-bottom: 0;
-    max-width: 35rem;
+    max-width: 100%;
   }
   .logo-img{
-    max-width: 20rem;
+    max-width: 100%;
   }
-}
-
-@keyframes blurIn{
-  from {
-    filter: blur(100px);
-  }
-  to {
-    filter: blur(0px);
+  .item-box{
+    width: 90%;
   }
 }
