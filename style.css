@@ -52,7 +52,6 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
 
 .item-img{
   max-height: 8rem;
-  animation: blurIn 2s;
   border-radius: 1rem;
 }
 
