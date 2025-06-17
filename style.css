@@ -1,0 +1,114 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Galindo;
+  color: white;
+}
+
+body{
+  background: url(img/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1{font-size: 2rem;} h2{font-size: 1.5rem;} p{font-size: 1rem;} hr{border: 0.1rem solid rgba(255, 255, 255, 0.2); margin: 1rem;}
+a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5);} a:active{color: red;}
+
+.flex-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  border: 0.8rem double rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  backdrop-filter: blur(15px);
+  width: fit-content;
+}
+
+.item-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem;
+  max-width: auto;
+}
+
+.item-box{
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.8rem double rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 15rem;
+  height: 12.5rem;
+}
+
+.item-img{
+  max-height: 8rem;
+  animation: blurIn 2s;
+  border-radius: 1rem;
+}
+
+.styled-button{
+  background: linear-gradient(to top, rgb(255, 51, 0), rgb(255, 87, 45));
+  border-top: 1px solid #ccc;
+  border-bottom: 5px solid #7e1900;
+  border-right: none;
+  border-left: none;
+  border-radius: 25px;
+  text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 1rem;
+  height: 4rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: 200ms;
+}
+
+.styled-button:hover{
+  scale: 1.05;
+}
+
+.styled-button:active{
+  filter: brightness(0.8);
+  scale: 0.8;
+}
+
+.logo-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30rem;
+}
+
+@media (max-width: 750px) {
+  .flex-container{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom: none;
+    margin-bottom: 0;
+    max-width: 35rem;
+  }
+  .logo-img{
+    max-width: 20rem;
+  }
+}
+
+@keyframes blurIn{
+  from {
+    filter: blur(100px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Kart World Randomizer</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=volume_off" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=volume_up" />
+</head>
+<body>
+  <img class="logo-img" src="img/logo.png" alt="">
+
+  <div class="flex-container">
+    <h1>Mario Kart World Randomizer</h1><p>Randomize Mario Kart World characters and vehicles</p>
+    <div class="button-container">
+      <button class="styled-button" id="randomizeButton" onclick="randomize()">● Randomize ●</button>
+    <div class="item-container">
+      <div class="item-box" id="vehicleItem"><img class="item-img" id="vehicleImg" src="img/vehicles/Standard_Kart.webp"><hr><p id="vehicleText">Standard Kart</p></div>
+      <div class="item-box" id="characterItem"><img class="item-img" id="characterImg" src="img/characters/Mario.webp"><hr><p id="characterText">Mario</p></div>
+    </div>
+  </div>
+
+  <footer>Made with ❤ by <a href="https://discordid.netlify.app/?id=794171026698928158" target="_blank">SnickiSnuck</a> • <a href="https://github.com/SnickiSnuck/mkworld-randomizer" target="_blank">GitHub</a> • v1.0.0</footer>
+
+  <script src="vehicles.js"></script>
+</body>
+</html>
