@@ -46,6 +46,18 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   padding: 1rem;
   width: 15rem;
   height: 12.5rem;
+  transition: 100ms;
+  cursor: pointer;
+  user-select: none;
+}
+
+.item-box:hover{
+  background: rgba(255, 255, 255, 0.15);
+  scale: 1.03;
+}
+
+.item-box:active{
+  scale: 0.95;
 }
 
 .item-img{
@@ -55,14 +67,6 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   transition: 200ms;
   cursor: pointer;
   user-select: none;
-}
-
-.item-img:hover{
-  scale: 1.1;
-}
-
-.item-img:active{
-  scale: 0.9;
 }
 
 .styled-button{
