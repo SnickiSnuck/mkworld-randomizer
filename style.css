@@ -52,6 +52,17 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   max-height: 8rem;
   max-width: 100%;
   border-radius: 1rem;
+  transition: 200ms;
+  cursor: pointer;
+  user-select: none;
+}
+
+.item-img:hover{
+  scale: 1.1;
+}
+
+.item-img:active{
+  scale: 0.9;
 }
 
 .styled-button{
@@ -60,7 +71,7 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   border-bottom: 5px solid #7e1900;
   border-right: none;
   border-left: none;
-  border-radius: 25px;
+  border-radius: 100px;
   text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -68,7 +79,7 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   height: 4rem;
   cursor: pointer;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  transition: 200ms;
+  transition: 100ms;
 }
 
 .styled-button:hover{
@@ -77,7 +88,31 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
 
 .styled-button:active{
   filter: brightness(0.8);
-  scale: 0.8;
+  scale: 0.9;
+}
+
+.audio-button{
+  position: fixed;
+  background: none;
+  border: none;
+  border-radius: 100px;
+  text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: 100ms;
+  opacity: 0.6;
+  z-index: 999;
+}
+
+.audio-button:hover{
+  scale: 1.05;
+  opacity: 1;
+}
+
+.audio-button:active{
+  filter: brightness(0.8);
+  scale: 0.9;
 }
 
 .logo-img{
@@ -85,6 +120,21 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   margin-left: auto;
   margin-right: auto;
   max-width: 30rem;
+  user-select: none;
+}
+
+.heart{
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.heart:hover{
+  color: rgb(255, 60, 60);
+}
+
+.heart-gif{
+  max-width: 90%;
 }
 
 @media (max-width: 750px) {
@@ -98,7 +148,7 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
     max-width: 100%;
   }
   .logo-img{
-    max-width: 100%;
+    max-width: 70%;
   }
   .item-box{
     width: 90%;
