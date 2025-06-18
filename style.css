@@ -51,13 +51,8 @@ a{color: rgb(100, 100, 255); transition: 100ms;} a:hover{filter: brightness(1.5)
   user-select: none;
 }
 
-.item-box:hover{
-  background: rgba(255, 255, 255, 0.15);
-  scale: 1.03;
-}
-
 .item-box:active{
-  scale: 0.95;
+  scale: 0.9;
 }
 
 .item-img{
