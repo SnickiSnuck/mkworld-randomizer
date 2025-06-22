@@ -1,2 +1,2 @@
 # Mario Kart World Randomizer
-A simple website I made to randomize the characters and vehicles in Mario Kart World.
+A simple website I made to randomize Mario Kart World characters & vehicles.
